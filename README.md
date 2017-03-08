@@ -6,6 +6,12 @@ Bedrock is a modern WordPress stack that helps you get started with the best dev
 
 Much of the philosophy behind Bedrock is inspired by the [Twelve-Factor App](http://12factor.net/) methodology including the [WordPress specific version](https://roots.io/twelve-factor-wordpress/).
 
+# [Timber](http://timber.github.io/timber/)
+Plugin to write WordPress themes w Object-Oriented Code and the Twig Template Engine.
+
+# [Lumberjack](https://github.com/Rareloop/lumberjack)
+A Wordpress starter theme based on Timber's starter theme, which uses Twig for templating.
+
 ## Features
 
 * Better folder structure
@@ -32,7 +38,7 @@ See a complete working example in the [roots-example-project.com repo](https://g
 
 1. Create a new project in a new folder for your project:
 
-  `composer create-project roots/bedrock your-project-folder-name`
+  `composer install`
 
 2. Copy `.env.example` to `.env` and update environment variables:
   * `DB_NAME` - Database name
@@ -52,7 +58,7 @@ See a complete working example in the [roots-example-project.com repo](https://g
 
   Or, you can cut and paste from the [Roots WordPress Salt Generator][roots-wp-salt].
 
-3. Add theme(s) in `web/app/themes` as you would for a normal WordPress site.
+3. You can add theme or use the Lumberjack one.
 
 4. Set your site vhost document root to `/path/to/site/web/` (`/path/to/site/current/web/` if using deploys)
 
@@ -72,20 +78,14 @@ Any other deployment method can be used as well with one requirement:
 ## Documentation
 
 Bedrock documentation is available at [https://roots.io/bedrock/docs/](https://roots.io/bedrock/docs/).
+Timber documentation is available at [http://timber.github.io/timber/#installation](http://timber.github.io/timber/#installation).
 
-## Contributing
+## Additional articles
 
-Contributions are welcome from everyone. We have [contributing guidelines](https://github.com/roots/guidelines/blob/master/CONTRIBUTING.md) to help you get started.
+I used these ones to set up the project. I will update as it evolves !
 
-## Community
-
-Keep track of development and community news.
-
-* Participate on the [Roots Discourse](https://discourse.roots.io/)
-* Follow [@rootswp on Twitter](https://twitter.com/rootswp)
-* Read and subscribe to the [Roots Blog](https://roots.io/blog/)
-* Subscribe to the [Roots Newsletter](https://roots.io/subscribe/)
-* Listen to the [Roots Radio podcast](https://roots.io/podcast/)
+https://adamtom.at/articles/supercharging-wordpress-with-lumberjack/
+https://css-tricks.com/intro-bedrock-wordpress/
 
 [roots-wp-salt]:https://roots.io/salts.html
 [wp-cli-dotenv]:https://github.com/aaemnnosttv/wp-cli-dotenv-command
